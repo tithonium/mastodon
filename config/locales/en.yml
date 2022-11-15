@@ -11,16 +11,16 @@ en:
       one: Follower
       other: Followers
     following: Following
-    instance_actor_flash: This account is a virtual actor used to represent the server itself and not any individual user. It is used for federation purposes and should not be suspended.
+    instance_actor_flash: This account is a virtual actor used to represent the server itself and not any individual operator. It is used for federation purposes and should not be suspended.
     last_active: last active
     link_verified_on: Ownership of this link was checked on %{date}
     nothing_here: There is nothing here!
     pin_errors:
       following: You must be already following the person you want to endorse
     posts:
-      one: Post
-      other: Posts
-    posts_tab_heading: Posts
+      one: Toot
+      other: Toots
+    posts_tab_heading: Toots
   admin:
     account_actions:
       action: Perform action
@@ -47,7 +47,7 @@ en:
         title: Change email for %{username}
       change_role:
         changed_msg: Role successfully changed!
-        edit_roles: Manage user roles
+        edit_roles: Manage operator roles
         label: Change role
         no_role: No role
         title: Change role for %{username}
@@ -126,7 +126,7 @@ en:
       removed_avatar_msg: Successfully removed %{username}'s avatar image
       removed_header_msg: Successfully removed %{username}'s header image
       resend_confirmation:
-        already_confirmed: This user is already confirmed
+        already_confirmed: This operator is already confirmed
         send: Resend confirmation link
         success: Confirmation link successfully sent!
       reset: Reset
@@ -134,8 +134,8 @@ en:
       resubscribe: Resubscribe
       role: Role
       search: Search
-      search_same_email_domain: Other users with the same email domain
-      search_same_ip: Other users with the same IP
+      search_same_email_domain: Other operators with the same e-mail domain
+      search_same_ip: Other operators with the same IP
       security: Security
       security_measures:
         only_password: Only password
@@ -148,7 +148,7 @@ en:
         targeted_reports: Reported by others
       silence: Limit
       silenced: Limited
-      statuses: Posts
+      statuses: Toots
       strikes: Previous strikes
       subscribe: Subscribe
       suspend: Suspend
@@ -173,11 +173,11 @@ en:
     action_logs:
       action_types:
         approve_appeal: Approve Appeal
-        approve_user: Approve User
+        approve_user: Approve Operator
         assigned_to_self_report: Assign Report
-        change_email_user: Change Email for User
-        change_role_user: Change Role of User
-        confirm_user: Confirm User
+        change_email_user: Change E-mail for Operator
+        change_role_user: Change Role of Operator
+        confirm_user: Confirm Operator
         create_account_warning: Create Warning
         create_announcement: Create Announcement
         create_canonical_email_block: Create Email Block
@@ -188,7 +188,7 @@ en:
         create_ip_block: Create IP rule
         create_unavailable_domain: Create Unavailable Domain
         create_user_role: Create Role
-        demote_user: Demote User
+        demote_user: Demote Operator
         destroy_announcement: Delete Announcement
         destroy_canonical_email_block: Delete Email Block
         destroy_custom_emoji: Delete Custom Emoji
@@ -197,20 +197,20 @@ en:
         destroy_email_domain_block: Delete Email Domain Block
         destroy_instance: Purge Domain
         destroy_ip_block: Delete IP rule
-        destroy_status: Delete Post
+        destroy_status: Delete Toot
         destroy_unavailable_domain: Delete Unavailable Domain
         destroy_user_role: Destroy Role
         disable_2fa_user: Disable 2FA
         disable_custom_emoji: Disable Custom Emoji
-        disable_sign_in_token_auth_user: Disable Email Token Authentication for User
-        disable_user: Disable User
+        disable_sign_in_token_auth_user: Disable E-mail Token Authentication for Operator
+        disable_user: Disable Operator
         enable_custom_emoji: Enable Custom Emoji
-        enable_sign_in_token_auth_user: Enable Email Token Authentication for User
-        enable_user: Enable User
+        enable_sign_in_token_auth_user: Enable E-mail Token Authentication for Operator
+        enable_user: Enable Operator
         memorialize_account: Memorialize Account
-        promote_user: Promote User
+        promote_user: Promote Operator
         reject_appeal: Reject Appeal
-        reject_user: Reject User
+        reject_user: Reject Operator
         remove_avatar_user: Remove Avatar
         reopen_report: Reopen Report
         resend_user: Resend Confirmation Mail
@@ -229,15 +229,15 @@ en:
         update_domain_block: Update Domain Block
         update_ip_block: Update IP rule
         update_report: Update Report
-        update_status: Update Post
+        update_status: Update Toot
         update_user_role: Update Role
       actions:
         approve_appeal_html: "%{name} approved moderation decision appeal from %{target}"
         approve_user_html: "%{name} approved sign-up from %{target}"
         assigned_to_self_report_html: "%{name} assigned report %{target} to themselves"
-        change_email_user_html: "%{name} changed the email address of user %{target}"
+        change_email_user_html: "%{name} changed the e-mail address of operator %{target}"
         change_role_user_html: "%{name} changed role of %{target}"
-        confirm_user_html: "%{name} confirmed email address of user %{target}"
+        confirm_user_html: "%{name} confirmed e-mail address of operator %{target}"
         create_account_warning_html: "%{name} sent a warning to %{target}"
         create_announcement_html: "%{name} created new announcement %{target}"
         create_canonical_email_block_html: "%{name} blocked email with the hash %{target}"
@@ -248,7 +248,7 @@ en:
         create_ip_block_html: "%{name} created rule for IP %{target}"
         create_unavailable_domain_html: "%{name} stopped delivery to domain %{target}"
         create_user_role_html: "%{name} created %{target} role"
-        demote_user_html: "%{name} demoted user %{target}"
+        demote_user_html: "%{name} demoted operator %{target}"
         destroy_announcement_html: "%{name} deleted announcement %{target}"
         destroy_canonical_email_block_html: "%{name} unblocked email with the hash %{target}"
         destroy_custom_emoji_html: "%{name} deleted emoji %{target}"
@@ -257,24 +257,24 @@ en:
         destroy_email_domain_block_html: "%{name} unblocked email domain %{target}"
         destroy_instance_html: "%{name} purged domain %{target}"
         destroy_ip_block_html: "%{name} deleted rule for IP %{target}"
-        destroy_status_html: "%{name} removed post by %{target}"
+        destroy_status_html: "%{name} removed toot by %{target}"
         destroy_unavailable_domain_html: "%{name} resumed delivery to domain %{target}"
         destroy_user_role_html: "%{name} deleted %{target} role"
-        disable_2fa_user_html: "%{name} disabled two factor requirement for user %{target}"
+        disable_2fa_user_html: "%{name} disabled two factor requirement for operator %{target}"
         disable_custom_emoji_html: "%{name} disabled emoji %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} disabled email token authentication for %{target}"
-        disable_user_html: "%{name} disabled login for user %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} disabled e-mail token authentication for %{target}"
+        disable_user_html: "%{name} disabled login for operator %{target}"
         enable_custom_emoji_html: "%{name} enabled emoji %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} enabled email token authentication for %{target}"
-        enable_user_html: "%{name} enabled login for user %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} enabled e-mail token authentication for %{target}"
+        enable_user_html: "%{name} enabled login for operator %{target}"
         memorialize_account_html: "%{name} turned %{target}'s account into a memoriam page"
-        promote_user_html: "%{name} promoted user %{target}"
+        promote_user_html: "%{name} promoted operator %{target}"
         reject_appeal_html: "%{name} rejected moderation decision appeal from %{target}"
         reject_user_html: "%{name} rejected sign-up from %{target}"
         remove_avatar_user_html: "%{name} removed %{target}'s avatar"
         reopen_report_html: "%{name} reopened report %{target}"
-        resend_user_html: "%{name} resent confirmation email for %{target}"
-        reset_password_user_html: "%{name} reset password of user %{target}"
+        resend_user_html: "%{name} resent confirmation e-mail for %{target}"
+        reset_password_user_html: "%{name} reset password of operator %{target}"
         resolve_report_html: "%{name} resolved report %{target}"
         sensitive_account_html: "%{name} marked %{target}'s media as sensitive"
         silence_account_html: "%{name} limited %{target}'s account"
@@ -289,12 +289,12 @@ en:
         update_domain_block_html: "%{name} updated domain block for %{target}"
         update_ip_block_html: "%{name} changed rule for IP %{target}"
         update_report_html: "%{name} updated report %{target}"
-        update_status_html: "%{name} updated post by %{target}"
+        update_status_html: "%{name} updated toot by %{target}"
         update_user_role_html: "%{name} changed %{target} role"
       deleted_account: deleted account
       empty: No logs found.
       filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      filter_by_user: Filter by operator
       title: Audit log
       unavailable_instance: "(domain name unavailable)"
     announcements:
@@ -350,10 +350,10 @@ en:
       updated_msg: Emoji successfully updated!
       upload: Upload
     dashboard:
-      active_users: active users
+      active_users: active operators
       interactions: interactions
       media_storage: Media storage
-      new_users: new users
+      new_users: new operators
       opened_reports: reports opened
       pending_appeals_html:
         one: "<strong>%{count}</strong> pending appeal"
@@ -365,8 +365,8 @@ en:
         one: "<strong>%{count}</strong> pending hashtag"
         other: "<strong>%{count}</strong> pending hashtags"
       pending_users_html:
-        one: "<strong>%{count}</strong> pending user"
-        other: "<strong>%{count}</strong> pending users"
+        one: "<strong>%{count}</strong> pending operator"
+        other: "<strong>%{count}</strong> pending operators"
       resolved_reports: reports resolved
       software: Software
       sources: Sign-up sources
@@ -409,7 +409,7 @@ en:
         create: Create block
         hint: The domain block will not prevent creation of account entries in the database, but will retroactively and automatically apply specific moderation methods on those accounts.
         severity:
-          desc_html: "<strong>Limit</strong> will make posts from accounts at this domain invisible to anyone who isn't following them. <strong>Suspend</strong> will remove all content, media, and profile data for this domain's accounts from your server. Use <strong>None</strong> if you just want to reject media files."
+          desc_html: "<strong>Limit</strong> will make toots from accounts at this domain invisible to anyone who isn't following them. <strong>Suspend</strong> will remove all content, media, and profile data for this domain's accounts from your server. Use <strong>None</strong> if you just want to reject media files."
           noop: None
           silence: Limit
           suspend: Suspend
@@ -465,7 +465,7 @@ en:
         title: Import domain blocks
       no_file: No file selected
     follow_recommendations:
-      description_html: "<strong>Follow recommendations help new users quickly find interesting content</strong>. When a user has not interacted with others enough to form personalized follow recommendations, these accounts are recommended instead. They are re-calculated on a daily basis from a mix of accounts with the highest recent engagements and highest local follower counts for a given language."
+      description_html: "<strong>Follow recommendations help new operators quickly find interesting content</strong>. When an operator has not interacted with others enough to form personalized follow recommendations, these accounts are recommended instead. They are re-calculated on a daily basis from a mix of accounts with the highest recent engagements and highest local follower counts for a given language."
       language: For language
       status: Status
       suppress: Suppress follow recommendation
@@ -512,7 +512,7 @@ en:
         instance_languages_dimension: Top languages
         instance_media_attachments_measure: stored media attachments
         instance_reports_measure: reports about them
-        instance_statuses_measure: stored posts
+        instance_statuses_measure: stored toots
       delivery:
         all: All
         clear: Clear delivery errors
@@ -572,11 +572,11 @@ en:
     relays:
       add_new: Add new relay
       delete: Delete
-      description_html: A <strong>federation relay</strong> is an intermediary server that exchanges large volumes of public posts between servers that subscribe and publish to it. <strong>It can help small and medium servers discover content from the fediverse</strong>, which would otherwise require local users manually following other people on remote servers.
+      description_html: A <strong>federation relay</strong> is an intermediary server that exchanges large volumes of public toots between servers that subscribe and publish to it. <strong>It can help small and medium servers discover content from the fediverse</strong>, which would otherwise require local operators manually following other people on remote servers.
       disable: Disable
       disabled: Disabled
       enable: Enable
-      enable_hint: Once enabled, your server will subscribe to all public posts from this relay, and will begin sending this server's public posts to it.
+      enable_hint: Once enabled, your server will subscribe to all public toots from this relay, and will begin sending this server's public toots to it.
       enabled: Enabled
       inbox_url: Relay URL
       pending: Waiting for relay's approval
@@ -596,15 +596,15 @@ en:
       action_log: Audit log
       action_taken_by: Action taken by
       actions:
-        delete_description_html: The reported posts will be deleted and a strike will be recorded to help you escalate on future infractions by the same account.
-        mark_as_sensitive_description_html: The media in the reported posts will be marked as sensitive and a strike will be recorded to help you escalate on future infractions by the same account.
+        delete_description_html: The reported toots will be deleted and a strike will be recorded to help you escalate on future infractions by the same account.
+        mark_as_sensitive_description_html: The media in the reported toots will be marked as sensitive and a strike will be recorded to help you escalate on future infractions by the same account.
         other_description_html: See more options for controlling the account's behaviour and customize communication to the reported account.
         resolve_description_html: No action will be taken against the reported account, no strike recorded, and the report will be closed.
         silence_description_html: The account will be visible only to those who already follow it or manually look it up, severely limiting its reach. Can always be reverted. Closes all reports against this account.
         suspend_description_html: The account and all its contents will be inaccessible and eventually deleted, and interacting with it will be impossible. Reversible within 30 days. Closes all reports against this account.
       actions_description_html: Decide which action to take to resolve this report. If you take a punitive action against the reported account, an email notification will be sent to them, except when the <strong>Spam</strong> category is selected.
       actions_description_remote_html: Decide which action to take to resolve this report. This will only affect how <strong>your</strong> server communicates with this remote account and handle its content.
-      actions_no_posts: This report doesn't have any associated posts to delete
+      actions_no_posts: This report doesn't have any associated toots to delete
       add_to_report: Add more to report
       already_suspended_badges:
         local: Already suspended on this server
@@ -622,9 +622,9 @@ en:
       confirm: Confirm
       confirm_action: Confirm moderation action against @%{acct}
       created_at: Reported
-      delete_and_resolve: Delete posts
+      delete_and_resolve: Delete toots
       forwarded: Forwarded
-      forwarded_replies_explanation: This report is from a remote user and about remote content. It has been forwarded to you because the reported content is in reply to one of your users.
+      forwarded_replies_explanation: This report is from a remote operator and about remote content. It has been forwarded to you because the reported content is in reply to one of your operators.
       forwarded_to: Forwarded to %{domain}
       mark_as_resolved: Mark as resolved
       mark_as_sensitive: Mark as sensitive
@@ -640,7 +640,7 @@ en:
       notes_description_html: View and leave notes to other moderators and your future self
       processed_msg: 'Report #%{id} successfully processed'
       quick_actions_description_html: 'Take a quick action or scroll down to see reported content:'
-      remote_user_placeholder: the remote user from %{instance}
+      remote_user_placeholder: the remote operator from %{instance}
       reopen: Reopen report
       report: 'Report #%{id}'
       reported_account: Reported account
@@ -654,13 +654,13 @@ en:
       statuses_description_html: Offending content will be cited in communication with the reported account
       summary:
         action_preambles:
-          delete_html: 'You are about to <strong>remove</strong> some of <strong>@%{acct}</strong>''s posts. This will:'
-          mark_as_sensitive_html: 'You are about to <strong>mark</strong> some of <strong>@%{acct}</strong>''s posts as <strong>sensitive</strong>. This will:'
+          delete_html: 'You are about to <strong>remove</strong> some of <strong>@%{acct}</strong>''s toots. This will:'
+          mark_as_sensitive_html: 'You are about to <strong>mark</strong> some of <strong>@%{acct}</strong>''s toots as <strong>sensitive</strong>. This will:'
           silence_html: 'You are about to <strong>limit</strong> <strong>@%{acct}</strong>''s account. This will:'
           suspend_html: 'You are about to <strong>suspend</strong> <strong>@%{acct}</strong>''s account. This will:'
         actions:
-          delete_html: Remove the offending posts
-          mark_as_sensitive_html: Mark the offending posts' media as sensitive
+          delete_html: Remove the offending toots
+          mark_as_sensitive_html: Mark the offending toots' media as sensitive
           silence_html: Severely limit <strong>@%{acct}</strong>'s reach by making their profile and contents only visible to people already following them or manually looking it profile up
           suspend_html: Suspend <strong>@%{acct}</strong>, making their profile and contents inaccessible and impossible to interact with
         close_report: 'Mark report #%{id} as resolved'
@@ -680,8 +680,8 @@ en:
     roles:
       add_new: Add role
       assigned_users:
-        one: "%{count} user"
-        other: "%{count} users"
+        one: "%{count} operator"
+        other: "%{count} operators"
       categories:
         administration: Administration
         devops: DevOps
@@ -689,54 +689,54 @@ en:
         moderation: Moderation
         special: Special
       delete: Delete
-      description_html: With <strong>user roles</strong>, you can customize which functions and areas of Mastodon your users can access.
+      description_html: With <strong>operator roles</strong>, you can customize which functions and areas of Mastodon your operators can access.
       edit: Edit '%{name}' role
       everyone: Default permissions
-      everyone_full_description_html: This is the <strong>base role</strong> affecting <strong>all users</strong>, even those without an assigned role. All other roles inherit permissions from it.
+      everyone_full_description_html: This is the <strong>base role</strong> affecting <strong>all operators</strong>, even those without an assigned role. All other roles inherit permissions from it.
       permissions_count:
         one: "%{count} permission"
         other: "%{count} permissions"
       privileges:
         administrator: Administrator
-        administrator_description: Users with this permission will bypass every permission
-        delete_user_data: Delete User Data
-        delete_user_data_description: Allows users to delete other users' data without delay
-        invite_users: Invite Users
-        invite_users_description: Allows users to invite new people to the server
+        administrator_description: Operators with this permission will bypass every permission
+        delete_user_data: Delete Operator Data
+        delete_user_data_description: Allows operators to delete other operators' data without delay
+        invite_users: Invite Operators
+        invite_users_description: Allows operators to invite new people to the server
         manage_announcements: Manage Announcements
-        manage_announcements_description: Allows users to manage announcements on the server
+        manage_announcements_description: Allows operators to manage announcements on the server
         manage_appeals: Manage Appeals
-        manage_appeals_description: Allows users to review appeals against moderation actions
+        manage_appeals_description: Allows operators to review appeals against moderation actions
         manage_blocks: Manage Blocks
-        manage_blocks_description: Allows users to block email providers and IP addresses
+        manage_blocks_description: Allows operators to block e-mail providers and IP addresses
         manage_custom_emojis: Manage Custom Emojis
-        manage_custom_emojis_description: Allows users to manage custom emojis on the server
+        manage_custom_emojis_description: Allows operators to manage custom emojis on the server
         manage_federation: Manage Federation
-        manage_federation_description: Allows users to block or allow federation with other domains, and control deliverability
+        manage_federation_description: Allows operators to block or allow federation with other domains, and control deliverability
         manage_invites: Manage Invites
-        manage_invites_description: Allows users to browse and deactivate invite links
+        manage_invites_description: Allows operators to browse and deactivate invite links
         manage_reports: Manage Reports
-        manage_reports_description: Allows users to review reports and perform moderation actions against them
+        manage_reports_description: Allows operators to review reports and perform moderation actions against them
         manage_roles: Manage Roles
-        manage_roles_description: Allows users to manage and assign roles below theirs
+        manage_roles_description: Allows operators to manage and assign roles below theirs
         manage_rules: Manage Rules
-        manage_rules_description: Allows users to change server rules
+        manage_rules_description: Allows operators to change server rules
         manage_settings: Manage Settings
-        manage_settings_description: Allows users to change site settings
+        manage_settings_description: Allows operators to change site settings
         manage_taxonomies: Manage Taxonomies
-        manage_taxonomies_description: Allows users to review trending content and update hashtag settings
-        manage_user_access: Manage User Access
-        manage_user_access_description: Allows users to disable other users' two-factor authentication, change their email address, and reset their password
-        manage_users: Manage Users
-        manage_users_description: Allows users to view other users' details and perform moderation actions against them
+        manage_taxonomies_description: Allows operators to review trending content and update hashtag settings
+        manage_user_access: Manage Operator Access
+        manage_user_access_description: Allows operators to disable other operators' two-factor authentication, change their e-mail address, and reset their password
+        manage_users: Manage Operators
+        manage_users_description: Allows operators to view other operators' details and perform moderation actions against them
         manage_webhooks: Manage Webhooks
-        manage_webhooks_description: Allows users to set up webhooks for administrative events
+        manage_webhooks_description: Allows operators to set up webhooks for administrative events
         view_audit_log: View Audit Log
-        view_audit_log_description: Allows users to see a history of administrative actions on the server
+        view_audit_log_description: Allows operators to see a history of administrative actions on the server
         view_dashboard: View Dashboard
-        view_dashboard_description: Allows users to access the dashboard and various metrics
+        view_dashboard_description: Allows operators to access the dashboard and various metrics
         view_devops: DevOps
-        view_devops_description: Allows users to access Sidekiq and pgHero dashboards
+        view_devops_description: Allows operators to access Sidekiq and pgHero dashboards
       title: Roles
     rules:
       add_new: Add rule
@@ -749,7 +749,7 @@ en:
       about:
         manage_rules: Manage server rules
         preamble: Provide in-depth information about how the server is operated, moderated, funded.
-        rules_hint: There is a dedicated area for rules that your users are expected to adhere to.
+        rules_hint: There is a dedicated area for rules that your operators are expected to adhere to.
         title: About
       appearance:
         preamble: Customize Mastodon's web interface.
@@ -759,17 +759,17 @@ en:
         title: Branding
       captcha_enabled:
         desc_html: This relies on external scripts from hCaptcha, which may be a security and privacy concern. In addition, <strong>this can make the registration process significantly less accessible to some (especially disabled) people</strong>. For these reasons, please consider alternative measures such as approval-based or invite-based registration.
-        title: Require new users to solve a CAPTCHA to confirm their account
+        title: Require new operators to solve a CAPTCHA to confirm their account
       content_retention:
         danger_zone: Danger zone
-        preamble: Control how user-generated content is stored in Mastodon.
+        preamble: Control how operator-generated content is stored in Mastodon.
         title: Content retention
       default_noindex:
-        desc_html: Affects all users who have not changed this setting themselves
-        title: Opt users out of search engine indexing by default
+        desc_html: Affects all operators who have not changed this setting themselves
+        title: Opt operators out of search engine indexing by default
       discovery:
         follow_recommendations: Follow recommendations
-        preamble: Surfacing interesting content is instrumental in onboarding new users who may not know anyone Mastodon. Control how various discovery features work on your server.
+        preamble: Surfacing interesting content is instrumental in onboarding new operators who may not know anyone Mastodon. Control how various discovery features work on your server.
         profile_directory: Profile directory
         public_timelines: Public timelines
         publish_discovered_servers: Publish discovered servers
@@ -779,7 +779,7 @@ en:
       domain_blocks:
         all: To everyone
         disabled: To no one
-        users: To logged-in local users
+        users: To logged-in local operators
       registrations:
         moderation_recommandation: Please make sure you have an adequate and reactive moderation team before you open registrations to everyone!
         preamble: Control who can create an account on your server.
@@ -792,7 +792,7 @@ en:
         warning_hint: We recommend using “Approval required for sign up” unless you are confident your moderation team can handle spam and malicious registrations in a timely fashion.
       security:
         authorized_fetch: Require authentication from federated servers
-        authorized_fetch_hint: Requiring authentication from federated servers enables stricter enforcement of both user-level and server-level blocks. However, this comes at the cost of a performance penalty, reduces the reach of your replies, and may introduce compatibility issues with some federated services. In addition, this will not prevent dedicated actors from fetching your public posts and accounts.
+        authorized_fetch_hint: Requiring authentication from federated servers enables stricter enforcement of both operator-level and server-level blocks. However, this comes at the cost of a performance penalty, reduces the reach of your replies, and may introduce compatibility issues with some federated services. In addition, this will not prevent dedicated actors from fetching your public toots and accounts.
         authorized_fetch_overridden_hint: You are currently unable to change this setting because it is overridden by an environment variable.
         federation_authentication: Federation authentication enforcement
       title: Server settings
@@ -827,20 +827,20 @@ en:
       media:
         title: Media
       metadata: Metadata
-      no_status_selected: No posts were changed as none were selected
-      open: Open post
-      original_status: Original post
+      no_status_selected: No toots were changed as none were selected
+      open: Open toot
+      original_status: Original toot
       reblogs: Reblogs
-      status_changed: Post changed
-      title: Account posts
+      status_changed: Toot changed
+      title: Account toots
       trending: Trending
       visibility: Visibility
       with_media: With media
     strikes:
       actions:
-        delete_statuses: "%{name} deleted %{target}'s posts"
+        delete_statuses: "%{name} deleted %{target}'s toots"
         disable: "%{name} froze %{target}'s account"
-        mark_statuses_as_sensitive: "%{name} marked %{target}'s posts as sensitive"
+        mark_statuses_as_sensitive: "%{name} marked %{target}'s toots as sensitive"
         none: "%{name} sent a warning to %{target}"
         sensitive: "%{name} marked %{target}'s account as sensitive"
         silence: "%{name} limited %{target}'s account"
@@ -889,7 +889,7 @@ en:
         message_html: "<strong>Your web server is misconfigured. The privacy of your users is at risk.</strong>"
       upload_check_privacy_error_object_storage:
         action: Check here for more information
-        message_html: "<strong>Your object storage is misconfigured. The privacy of your users is at risk.</strong>"
+        message_html: "<strong>Your object storage is misconfigured. The privacy of your operators is at risk.</strong>"
     tags:
       moderation:
         not_trendable: Not trendable
@@ -924,7 +924,7 @@ en:
         confirm_allow_provider: Are you sure you want to allow selected providers?
         confirm_disallow: Are you sure you want to disallow selected links?
         confirm_disallow_provider: Are you sure you want to disallow selected providers?
-        description_html: These are links that are currently being shared a lot by accounts that your server sees posts from. It can help your users find out what's going on in the world. No links are displayed publicly until you approve the publisher. You can also allow or reject individual links.
+        description_html: These are links that are currently being shared a lot by accounts that your server sees toots from. It can help your operators find out what's going on in the world. No links are displayed publicly until you approve the publisher. You can also allow or reject individual links.
         disallow: Disallow link
         disallow_provider: Disallow publisher
         no_link_selected: No links were changed as none were selected
@@ -945,21 +945,21 @@ en:
         title: Publishers
       rejected: Rejected
       statuses:
-        allow: Allow post
+        allow: Allow toot
         allow_account: Allow author
         confirm_allow: Are you sure you want to allow selected statuses?
         confirm_allow_account: Are you sure you want to allow selected accounts?
         confirm_disallow: Are you sure you want to disallow selected statuses?
         confirm_disallow_account: Are you sure you want to disallow selected accounts?
-        description_html: These are posts that your server knows about that are currently being shared and favorited a lot at the moment. It can help your new and returning users to find more people to follow. No posts are displayed publicly until you approve the author, and the author allows their account to be suggested to others. You can also allow or reject individual posts.
-        disallow: Disallow post
+        description_html: These are toots that your server knows about that are currently being shared and favorited a lot at the moment. It can help your new and returning operators to find more people to follow. No toots are displayed publicly until you approve the author, and the author allows their account to be suggested to others. You can also allow or reject individual toots.
+        disallow: Disallow toot
         disallow_account: Disallow author
-        no_status_selected: No trending posts were changed as none were selected
+        no_status_selected: No trending toots were changed as none were selected
         not_discoverable: Author has not opted-in to being discoverable
         shared_by:
           one: Shared or favorited one time
           other: Shared and favorited %{friendly_count} times
-        title: Trending posts
+        title: Trending toots
       tags:
         current_score: Current score %{score}
         dashboard:
@@ -968,7 +968,7 @@ en:
           tag_servers_dimension: Top servers
           tag_servers_measure: different servers
           tag_uses_measure: total uses
-        description_html: These are hashtags that are currently appearing in a lot of posts that your server sees. It can help your users find out what people are talking the most about at the moment. No hashtags are displayed publicly until you approve them.
+        description_html: These are hashtags that are currently appearing in a lot of toots that your server sees. It can help your operators find out what people are talking the most about at the moment. No hashtags are displayed publicly until you approve them.
         listable: Can be suggested
         no_tag_selected: No tags were changed as none were selected
         not_listable: Won't be suggested
@@ -1017,9 +1017,9 @@ en:
       subject: Registrations for %{instance} have been automatically switched to requiring approval
     new_appeal:
       actions:
-        delete_statuses: to delete their posts
+        delete_statuses: to delete their toots
         disable: to freeze their account
-        mark_statuses_as_sensitive: to mark their posts as sensitive
+        mark_statuses_as_sensitive: to mark their toots as sensitive
         none: a warning
         sensitive: to mark their account as sensitive
         silence: to limit their account
@@ -1045,7 +1045,7 @@ en:
       new_trending_links:
         title: Trending links
       new_trending_statuses:
-        title: Trending posts
+        title: Trending toots
       new_trending_tags:
         title: Trending hashtags
       subject: New trends up for review on %{instance}
@@ -1074,7 +1074,7 @@ en:
     unsubscribe: Unsubscribe
     view: 'View:'
     view_profile: View profile
-    view_status: View post
+    view_status: View toot
   applications:
     created: Application successfully created
     destroyed: Application successfully deleted
@@ -1104,7 +1104,7 @@ en:
     description:
       prefix_invited_by_user: "@%{name} invites you to join this server of Mastodon!"
       prefix_sign_up: Sign up on Mastodon today!
-      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
+      suffix: With an account, you will be able to follow people, toot updates and exchange messages with users from any Mastodon server and more!
     didnt_get_confirmation: Didn't receive a confirmation link?
     dont_have_your_security_key: Don't have your security key?
     forgot_password: Forgot your password?
@@ -1206,7 +1206,7 @@ en:
     warning:
       before: 'Before proceeding, please read these notes carefully:'
       caches: Content that has been cached by other servers may persist
-      data_removal: Your posts and other data will be permanently removed
+      data_removal: Your toots and other data will be permanently removed
       email_change_html: You can <a href="%{path}">change your email address</a> without deleting your account
       email_contact_html: If it still doesn't arrive, you can email <a href="mailto:%{email}">%{email}</a> for help
       email_reconfirmation_html: If you are not receiving the confirmation email, you can <a href="%{path}">request it again</a>
@@ -1230,13 +1230,13 @@ en:
       description_html: These are actions taken against your account and warnings that have been sent to you by the staff of %{instance}.
       recipient: Addressed to
       reject_appeal: Reject appeal
-      status: 'Post #%{id}'
-      status_removed: Post already removed from system
+      status: 'Toot #%{id}'
+      status_removed: Toot already removed from system
       title: "%{action} from %{date}"
       title_actions:
-        delete_statuses: Post removal
+        delete_statuses: Toot removal
         disable: Freezing of account
-        mark_statuses_as_sensitive: Marking of posts as sensitive
+        mark_statuses_as_sensitive: Marking of toots as sensitive
         none: Warning
         sensitive: Marking of account as sensitive
         silence: Limitation of account
@@ -1246,7 +1246,7 @@ en:
       your_appeal_rejected: Your appeal has been rejected
   edit_profile:
     basic_information: Basic information
-    hint_html: "<strong>Customize what people see on your public profile and next to your posts.</strong> Other people are more likely to follow you back and interact with you when you have a filled out profile and a profile picture."
+    hint_html: "<strong>Customize what people see on your public profile and next to your toots.</strong> Other people are more likely to follow you back and interact with you when you have a filled out profile and a profile picture."
     other: Other
   errors:
     '400': The request you submitted was invalid or malformed.
@@ -1264,13 +1264,13 @@ en:
     '503': The page could not be served due to a temporary server failure.
     noscript_html: To use the Mastodon web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Mastodon for your platform.
   existing_username_validator:
-    not_found: could not find a local user with that username
+    not_found: could not find a local operator with that username
     not_found_multiple: could not find %{usernames}
   exports:
     archive_takeout:
       date: Date
       download: Download your archive
-      hint_html: You can request an archive of your <strong>posts and uploaded media</strong>. The exported data will be in the ActivityPub format, readable by any compliant software. You can request an archive every 7 days.
+      hint_html: You can request an archive of your <strong>toots and uploaded media</strong>. The exported data will be in the ActivityPub format, readable by any compliant software. You can request an archive every 7 days.
       in_progress: Compiling your archive...
       request: Request your archive
       size: Size
@@ -1285,7 +1285,7 @@ en:
     add_new: Add new
     errors:
       limit: You have already featured the maximum number of hashtags
-    hint_html: "<strong>Feature your most important hashtags on your profile.</strong> A great tool for keeping track of your creative works and long-term projects, featured hashtags are displayed prominently on your profile and allow quick access to your own posts."
+    hint_html: "<strong>Feature your most important hashtags on your profile.</strong> A great tool for keeping track of your creative works and long-term projects, featured hashtags are displayed prominently on your profile and allow quick access to your own toots."
   filters:
     contexts:
       account: Profiles
@@ -1296,8 +1296,8 @@ en:
     edit:
       add_keyword: Add keyword
       keywords: Keywords
-      statuses: Individual posts
-      statuses_hint_html: This filter applies to select individual posts regardless of whether they match the keywords below. <a href="%{path}">Review or remove posts from the filter</a>.
+      statuses: Individual toots
+      statuses_hint_html: This filter applies to select individual toots regardless of whether they match the keywords below. <a href="%{path}">Review or remove toots from the filter</a>.
       title: Edit filter
     errors:
       deprecated_api_multiple_keywords: These parameters cannot be changed from this application because they apply to more than one filter keyword. Use a more recent application or the web interface.
@@ -1312,11 +1312,11 @@ en:
         one: "%{count} keyword"
         other: "%{count} keywords"
       statuses:
-        one: "%{count} post"
-        other: "%{count} posts"
+        one: "%{count} toot"
+        other: "%{count} toots"
       statuses_long:
-        one: "%{count} individual post hidden"
-        other: "%{count} individual posts hidden"
+        one: "%{count} individual toot hidden"
+        other: "%{count} individual toots hidden"
       title: Filters
     new:
       save: Save new filter
@@ -1326,8 +1326,8 @@ en:
       batch:
         remove: Remove from filter
       index:
-        hint: This filter applies to select individual posts regardless of other criteria. You can add more posts to this filter from the web interface.
-        title: Filtered posts
+        hint: This filter applies to select individual toots regardless of other criteria. You can add more toots to this filter from the web interface.
+        title: Filtered toots
   generic:
     all: All
     all_items_on_page_selected_html:
@@ -1369,14 +1369,14 @@ en:
       overwrite_long: Replace current records with the new ones
     overwrite_preambles:
       blocking_html: You are about to <strong>replace your block list</strong> with up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong>.
-      bookmarks_html: You are about to <strong>replace your bookmarks</strong> with up to <strong>%{total_items} posts</strong> from <strong>%{filename}</strong>.
+      bookmarks_html: You are about to <strong>replace your bookmarks</strong> with up to <strong>%{total_items} toots</strong> from <strong>%{filename}</strong>.
       domain_blocking_html: You are about to <strong>replace your domain block list</strong> with up to <strong>%{total_items} domains</strong> from <strong>%{filename}</strong>.
       following_html: You are about to <strong>follow</strong> up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong> and <strong>stop following anyone else</strong>.
       lists_html: You are about to <strong>replace your lists</strong> with contents of <strong>%{filename}</strong>. Up to <strong>%{total_items} accounts</strong> will be added to new lists.
       muting_html: You are about to <strong>replace your list of muted accounts</strong> with up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong>.
     preambles:
       blocking_html: You are about to <strong>block</strong> up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong>.
-      bookmarks_html: You are about to add up to <strong>%{total_items} posts</strong> from <strong>%{filename}</strong> to your <strong>bookmarks</strong>.
+      bookmarks_html: You are about to add up to <strong>%{total_items} toots</strong> from <strong>%{filename}</strong> to your <strong>bookmarks</strong>.
       domain_blocking_html: You are about to <strong>block</strong> up to <strong>%{total_items} domains</strong> from <strong>%{filename}</strong>.
       following_html: You are about to <strong>follow</strong> up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong>.
       lists_html: You are about to add up to <strong>%{total_items} accounts</strong> from <strong>%{filename}</strong> to your <strong>lists</strong>. New lists will be created if there is no list to add to.
@@ -1458,14 +1458,14 @@ en:
           follow: follow notification emails
           follow_request: follow request emails
           mention: mention notification emails
-          reblog: boost notification emails
+          reblog: boop notification emails
       resubscribe_html: If you've unsubscribed by mistake, you can re-subscribe from your <a href="%{settings_path}">email notification settings</a>.
       success_html: You'll no longer receive %{type} for Mastodon on %{domain} to your email at %{email}.
       title: Unsubscribe
   media_attachments:
     validations:
-      images_and_video: Cannot attach a video to a post that already contains images
-      not_found: Media %{ids} not found or already attached to another post
+      images_and_video: Cannot attach a video to a toot that already contains images
+      not_found: Media %{ids} not found or already attached to another toot
       not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Cannot attach more than 4 files
   migrations:
@@ -1502,9 +1502,9 @@ en:
   moderation:
     title: Moderation
   move_handler:
-    carry_blocks_over_text: This user moved from %{acct}, which you had blocked.
-    carry_mutes_over_text: This user moved from %{acct}, which you had muted.
-    copy_account_note_text: 'This user moved from %{acct}, here were your previous notes about them:'
+    carry_blocks_over_text: This operator moved from %{acct}, which you had blocked.
+    carry_mutes_over_text: This operator moved from %{acct}, which you had muted.
+    copy_account_note_text: 'This operator moved from %{acct}, here were your previous notes about them:'
   navigation:
     toggle_menu: Toggle menu
   notification_mailer:
@@ -1514,8 +1514,8 @@ en:
       sign_up:
         subject: "%{name} signed up"
     favourite:
-      body: 'Your post was favorited by %{name}:'
-      subject: "%{name} favorited your post"
+      body: 'Your toot was favorited by %{name}:'
+      subject: "%{name} favorited your toot"
       title: New favorite
     follow:
       body: "%{name} is now following you!"
@@ -1534,13 +1534,13 @@ en:
     poll:
       subject: A poll by %{name} has ended
     reblog:
-      body: 'Your post was boosted by %{name}:'
-      subject: "%{name} boosted your post"
-      title: New boost
+      body: 'Your toot was booped by %{name}:'
+      subject: "%{name} booped your toot"
+      title: New boop
     status:
-      subject: "%{name} just posted"
+      subject: "%{name} just tooted"
     update:
-      subject: "%{name} edited a post"
+      subject: "%{name} edited a toot"
   notifications:
     administration_emails: Admin email notifications
     email_events: Events for email notifications
@@ -1584,16 +1584,16 @@ en:
       too_many_options: can't contain more than %{max} items
   preferences:
     other: Other
-    posting_defaults: Posting defaults
+    posting_defaults: Tooting defaults
     public_timelines: Public timelines
   privacy:
-    hint_html: "<strong>Customize how you want your profile and your posts to be found.</strong> A variety of features in Mastodon can help you reach a wider audience when enabled. Take a moment to review these settings to make sure they fit your use case."
+    hint_html: "<strong>Customize how you want your profile and your toots to be found.</strong> A variety of features in Mastodon can help you reach a wider audience when enabled. Take a moment to review these settings to make sure they fit your use case."
     privacy: Privacy
-    privacy_hint_html: Control how much you want to disclose for the benefit of others. People discover interesting profiles and cool apps by browsing other people's follows and seeing which apps they post from, but you may prefer to keep it hidden.
+    privacy_hint_html: Control how much you want to disclose for the benefit of others. People discover interesting profiles and cool apps by browsing other people's follows and seeing which apps they toot from, but you may prefer to keep it hidden.
     reach: Reach
-    reach_hint_html: Control whether you want to be discovered and followed by new people. Do you want your posts to appear on the Explore screen? Do you want other people to see you in their follow recommendations? Do you want to accept all new followers automatically, or have granular control over each one?
+    reach_hint_html: Control whether you want to be discovered and followed by new people. Do you want your toots to appear on the Explore screen? Do you want other people to see you in their follow recommendations? Do you want to accept all new followers automatically, or have granular control over each one?
     search: Search
-    search_hint_html: Control how you want to be found. Do you want people to find you by what you've publicly posted about? Do you want people outside Mastodon to find your profile when searching the web? Please mind that total exclusion from all search engines cannot be guaranteed for public information.
+    search_hint_html: Control how you want to be found. Do you want people to find you by what you've publicly tooted about? Do you want people outside Mastodon to find your profile when searching the web? Please mind that total exclusion from all search engines cannot be guaranteed for public information.
     title: Privacy and reach
   privacy_policy:
     title: Privacy Policy
@@ -1623,7 +1623,7 @@ en:
     relationship: Relationship
     remove_selected_domains: Remove all followers from the selected domains
     remove_selected_followers: Remove selected followers
-    remove_selected_follows: Unfollow selected users
+    remove_selected_follows: Unfollow selected operators
     status: Account status
   remote_follow:
     missing_resource: Could not find the required redirect URL for your account
@@ -1633,11 +1633,11 @@ en:
   rss:
     content_warning: 'Content warning:'
     descriptions:
-      account: Public posts from @%{acct}
-      tag: 'Public posts tagged #%{hashtag}'
+      account: Public toots from @%{acct}
+      tag: 'Public toots tagged #%{hashtag}'
   scheduled_statuses:
-    over_daily_limit: You have exceeded the limit of %{limit} scheduled posts for today
-    over_total_limit: You have exceeded the limit of %{limit} scheduled posts
+    over_daily_limit: You have exceeded the limit of %{limit} scheduled toots for today
+    over_total_limit: You have exceeded the limit of %{limit} scheduled toots
     too_soon: The scheduled date must be in the future
   self_destruct:
     lead_html: Unfortunately, <strong>%{domain}</strong> is permanently closing down. If you had an account there, you will not be able to continue using it, but you can still request a backup of your data.
@@ -1708,7 +1708,7 @@ en:
     profile: Public profile
     relationships: Follows and followers
     severed_relationships: Severed relationships
-    statuses_cleanup: Automated post deletion
+    statuses_cleanup: Automated toot deletion
     strikes: Moderation strikes
     two_factor_authentication: Two-factor Auth
     webauthn_authentication: Security keys
@@ -1735,7 +1735,7 @@ en:
       video:
         one: "%{count} video"
         other: "%{count} videos"
-    boosted_from_html: Boosted from %{acct_link}
+    boosted_from_html: Booped from %{acct_link}
     content_warning: 'Content warning: %{warning}'
     default_language: Same as interface language
     disallowed_hashtags:
@@ -1743,13 +1743,13 @@ en:
       other: 'contained the disallowed hashtags: %{tags}'
     edited_at_html: Edited %{date}
     errors:
-      in_reply_not_found: The post you are trying to reply to does not appear to exist.
+      in_reply_not_found: The toot you are trying to reply to does not appear to exist.
     over_character_limit: character limit of %{max} exceeded
     pin_errors:
-      direct: Posts that are only visible to mentioned users cannot be pinned
-      limit: You have already pinned the maximum number of posts
-      ownership: Someone else's post cannot be pinned
-      reblog: A boost cannot be pinned
+      direct: Toots that are only visible to mentioned operators cannot be pinned
+      limit: You have already pinned the maximum number of toots
+      ownership: Someone else's toot cannot be pinned
+      reblog: A boop cannot be pinned
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Direct
@@ -1760,26 +1760,26 @@ en:
       unlisted: Unlisted
       unlisted_long: Everyone can see, but not listed on public timelines
   statuses_cleanup:
-    enabled: Automatically delete old posts
-    enabled_hint: Automatically deletes your posts once they reach a specified age threshold, unless they match one of the exceptions below
+    enabled: Automatically delete old toots
+    enabled_hint: Automatically deletes your toots once they reach a specified age threshold, unless they match one of the exceptions below
     exceptions: Exceptions
-    explanation: Because deleting posts is an expensive operation, this is done slowly over time when the server is not otherwise busy. For this reason, your posts may be deleted a while after they reach the age threshold.
+    explanation: Because deleting toots is an expensive operation, this is done slowly over time when the server is not otherwise busy. For this reason, your toots may be deleted a while after they reach the age threshold.
     ignore_favs: Ignore favorites
-    ignore_reblogs: Ignore boosts
+    ignore_reblogs: Ignore boops
     interaction_exceptions: Exceptions based on interactions
-    interaction_exceptions_explanation: Note that there is no guarantee for posts to be deleted if they go below the favorite or boost threshold after having once gone over them.
+    interaction_exceptions_explanation: Note that there is no guarantee for toots to be deleted if they go below the favorite or boop threshold after having once gone over them.
     keep_direct: Keep direct messages
     keep_direct_hint: Doesn't delete any of your direct messages
-    keep_media: Keep posts with media attachments
-    keep_media_hint: Doesn't delete any of your posts that have media attachments
-    keep_pinned: Keep pinned posts
-    keep_pinned_hint: Doesn't delete any of your pinned posts
+    keep_media: Keep toots with media attachments
+    keep_media_hint: Doesn't delete any of your toots that have media attachments
+    keep_pinned: Keep pinned toots
+    keep_pinned_hint: Doesn't delete any of your pinned toots
     keep_polls: Keep polls
     keep_polls_hint: Doesn't delete any of your polls
-    keep_self_bookmark: Keep posts you bookmarked
-    keep_self_bookmark_hint: Doesn't delete your own posts if you have bookmarked them
-    keep_self_fav: Keep posts you favorited
-    keep_self_fav_hint: Doesn't delete your own posts if you have favorited them
+    keep_self_bookmark: Keep toots you bookmarked
+    keep_self_bookmark_hint: Doesn't delete your own toots if you have bookmarked them
+    keep_self_fav: Keep toots you favorited
+    keep_self_fav_hint: Doesn't delete your own toots if you have favorited them
     min_age:
       '1209600': 2 weeks
       '15778476': 6 months
@@ -1790,10 +1790,10 @@ en:
       '63113904': 2 years
       '7889238': 3 months
     min_age_label: Age threshold
-    min_favs: Keep posts favorited at least
-    min_favs_hint: Doesn't delete any of your posts that has received at least this number of favorites. Leave blank to delete posts regardless of their number of favorites
-    min_reblogs: Keep posts boosted at least
-    min_reblogs_hint: Doesn't delete any of your posts that has been boosted at least this number of times. Leave blank to delete posts regardless of their number of boosts
+    min_favs: Keep toots favorited at least
+    min_favs_hint: Doesn't delete any of your toots that has received at least this number of favorites. Leave blank to delete toots regardless of their number of favorites
+    min_reblogs: Keep toots booped at least
+    min_reblogs_hint: Doesn't delete any of your toots that has been booped at least this number of times. Leave blank to delete toots regardless of their number of boops
   stream_entries:
     sensitive_content: Sensitive content
   strikes:
@@ -1868,26 +1868,26 @@ en:
         spam: Spam
         violation: Content violates the following community guidelines
       explanation:
-        delete_statuses: Some of your posts have been found to violate one or more community guidelines and have been subsequently removed by the moderators of %{instance}.
+        delete_statuses: Some of your toots have been found to violate one or more community guidelines and have been subsequently removed by the moderators of %{instance}.
         disable: You can no longer use your account, but your profile and other data remains intact. You can request a backup of your data, change account settings or delete your account.
-        mark_statuses_as_sensitive: Some of your posts have been marked as sensitive by the moderators of %{instance}. This means that people will need to tap the media in the posts before a preview is displayed. You can mark media as sensitive yourself when posting in the future.
+        mark_statuses_as_sensitive: Some of your toots have been marked as sensitive by the moderators of %{instance}. This means that people will need to tap the media in the toots before a preview is displayed. You can mark media as sensitive yourself when tooting in the future.
         sensitive: From now on, all your uploaded media files will be marked as sensitive and hidden behind a click-through warning.
-        silence: You can still use your account but only people who are already following you will see your posts on this server, and you may be excluded from various discovery features. However, others may still manually follow you.
+        silence: You can still use your account but only people who are already following you will see your toots on this server, and you may be excluded from various discovery features. However, others may still manually follow you.
         suspend: You can no longer use your account, and your profile and other data are no longer accessible. You can still login to request a backup of your data until the data is fully removed in about 30 days, but we will retain some basic data to prevent you from evading the suspension.
       reason: 'Reason:'
-      statuses: 'Posts cited:'
+      statuses: 'Toots cited:'
       subject:
-        delete_statuses: Your posts on %{acct} have been removed
+        delete_statuses: Your toots on %{acct} have been removed
         disable: Your account %{acct} has been frozen
-        mark_statuses_as_sensitive: Your posts on %{acct} have been marked as sensitive
+        mark_statuses_as_sensitive: Your toots on %{acct} have been marked as sensitive
         none: Warning for %{acct}
-        sensitive: Your posts on %{acct} will be marked as sensitive from now on
+        sensitive: Your toots on %{acct} will be marked as sensitive from now on
         silence: Your account %{acct} has been limited
         suspend: Your account %{acct} has been suspended
       title:
-        delete_statuses: Posts removed
+        delete_statuses: Toots removed
         disable: Account frozen
-        mark_statuses_as_sensitive: Posts marked as sensitive
+        mark_statuses_as_sensitive: Toots marked as sensitive
         none: Warning
         sensitive: Account marked as sensitive
         silence: Account limited
@@ -1906,9 +1906,9 @@ en:
       feature_action: Learn more
       feature_audience: Mastodon provides you with a unique possibility of managing your audience without middlemen. Mastodon deployed on your own infrastructure allows you to follow and be followed from any other Mastodon server online and is under no one's control but yours.
       feature_audience_title: Build your audience in confidence
-      feature_control: You know best what you want to see on your home feed. No algorithms or ads to waste your time. Follow anyone across any Mastodon server from a single account and receive their posts in chronological order, and make your corner of the internet a little more like you.
+      feature_control: You know best what you want to see on your home feed. No algorithms or ads to waste your time. Follow anyone across any Mastodon server from a single account and receive their toots in chronological order, and make your corner of the internet a little more like you.
       feature_control_title: Stay in control of your own timeline
-      feature_creativity: Mastodon supports audio, video and picture posts, accessibility descriptions, polls, content warnings, animated avatars, custom emojis, thumbnail crop control, and more, to help you express yourself online. Whether you're publishing your art, your music, or your podcast, Mastodon is there for you.
+      feature_creativity: Mastodon supports audio, video and picture toots, accessibility descriptions, polls, content warnings, animated avatars, custom emojis, thumbnail crop control, and more, to help you express yourself online. Whether you're publishing your art, your music, or your podcast, Mastodon is there for you.
       feature_creativity_title: Unparalleled creativity
       feature_moderation: Mastodon puts decision making back in your hands. Each server creates their own rules and regulations, which are enforced locally and not top-down like corporate social media, making it the most flexible in responding to the needs of different groups of people. Join a server with the rules you agree with, or host your own.
       feature_moderation_title: Moderating the way it should be
@@ -1926,7 +1926,7 @@ en:
       hashtags_view_more: View more trending hashtags
       post_action: Compose
       post_step: Say hello to the world with text, photos, videos, or polls.
-      post_title: Make your first post
+      post_title: Make your first toot
       share_action: Share
       share_step: Let your friends know how to find you on Mastodon.
       share_title: Share your Mastodon profile
@@ -1942,7 +1942,7 @@ en:
     seamless_external_login: You are logged in via an external service, so password and email settings are not available.
     signed_in_as: 'Signed in as:'
   verification:
-    extra_instructions_html: <strong>Tip:</strong> The link on your website can be invisible. The important part is <code>rel="me"</code> which prevents impersonation on websites with user-generated content. You can even use a <code>link</code> tag in the header of the page instead of <code>a</code>, but the HTML must be accessible without executing JavaScript.
+    extra_instructions_html: <strong>Tip:</strong> The link on your website can be invisible. The important part is <code>rel="me"</code> which prevents impersonation on websites with operator-generated content. You can even use a <code>link</code> tag in the header of the page instead of <code>a</code>, but the HTML must be accessible without executing JavaScript.
     here_is_how: Here's how
     hint_html: "<strong>Verifying your identity on Mastodon is for everyone.</strong> Based on open web standards, now and forever free. All you need is a personal website that people recognize you by. When you link to this website from your profile, we will check that the website links back to your profile and show a visual indicator on it."
     instructions_html: Copy and paste the code below into the HTML of your website. Then add the address of your website into one of the extra fields on your profile from the "Edit profile" tab and save changes.
