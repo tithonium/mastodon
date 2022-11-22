@@ -79,6 +79,7 @@ services:
       - es
     volumes:
       - /opt/cluster/mastodon/clacks/public/system:/mastodon/public/system
+      - /opt/cluster/mastodon/clacks/public/docs:/mastodon/public/docs
 
   streaming:
     # You can uncomment the following lines if you want to not use the prebuilt image, for example if you have local code changes

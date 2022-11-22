@@ -70,7 +70,11 @@ class LinkFooter extends PureComponent {
             </>
           )}
           {DividingCircle}
-          <Link to='/privacy-policy' target={multiColumn ? '_blank' : undefined}><FormattedMessage id='footer.privacy_policy' defaultMessage='Privacy policy' /></Link>
+          <a href='/docs/terms-of-service.html' target='_blank'>Terms of Service</a>
+          {DividingCircle}
+          <a href='/docs/privacy-policy.html' target='_blank'><FormattedMessage id='footer.privacy_policy' defaultMessage='Privacy policy' /></a>
+          {DividingCircle}
+          <a href='/docs/dmca-policy.html' target='_blank'>DMCA policy</a>
         </p>
 
         <p>
