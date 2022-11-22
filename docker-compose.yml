@@ -88,6 +88,7 @@ services:
       - es
     volumes:
       - /mnt/cluster/mastodon/clacks/public/system:/mastodon/public/system
+      - /mnt/cluster/mastodon/clacks/public/docs:/mastodon/public/docs
     deploy:
       replicas: 2
       placement:
