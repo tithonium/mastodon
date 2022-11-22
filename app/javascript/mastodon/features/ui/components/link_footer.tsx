@@ -51,7 +51,7 @@ export const LinkFooter: React.FC<{
           )}
           <li>
             <Link
-              to='/privacy-policy'
+              to='/docs/privacy-policy.html'
               target={multiColumn ? '_blank' : undefined}
               rel='privacy-policy'
             >
@@ -61,20 +61,30 @@ export const LinkFooter: React.FC<{
               />
             </Link>
           </li>
-          {termsOfServiceEnabled && (
-            <li>
-              <Link
-                to='/terms-of-service'
-                target={multiColumn ? '_blank' : undefined}
-                rel='terms-of-service'
-              >
-                <FormattedMessage
-                  id='footer.terms_of_service'
-                  defaultMessage='Terms of service'
-                />
-              </Link>
-            </li>
-          )}
+          <li>
+            <Link
+              to='/docs/terms-of-service.html'
+              target={multiColumn ? '_blank' : undefined}
+              rel='terms-of-service'
+            >
+              <FormattedMessage
+                id='footer.terms_of_service'
+                defaultMessage='Terms of service'
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='/docs/dmca-policy.html'
+              target={multiColumn ? '_blank' : undefined}
+              rel='dmca-policy'
+            >
+              <FormattedMessage
+                id='footer.dmca_policy'
+                defaultMessage='DMCA policy'
+              />
+            </Link>
+          </li>
         </ul>
       </section>
       <section>
