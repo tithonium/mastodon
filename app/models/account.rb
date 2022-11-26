@@ -65,7 +65,7 @@ class Account < ApplicationRecord
   )
 
   BACKGROUND_REFRESH_INTERVAL = 1.week.freeze
-  DEFAULT_FIELDS_SIZE = 4
+  DEFAULT_FIELDS_SIZE = 10
   INSTANCE_ACTOR_ID = -99
 
   USERNAME_RE   = /[a-z0-9_]+([.-]+[a-z0-9_]+)*/i
@@ -372,6 +372,11 @@ class Account < ApplicationRecord
     self[:fields] = fields
   end
 
+<<<<<<< HEAD
+=======
+  DEFAULT_FIELDS_SIZE = 10
+
+>>>>>>> ca4842bf6 ([CLACKS] Increase profile fields to 10)
   def build_fields
     return if fields.size >= DEFAULT_FIELDS_SIZE
 
