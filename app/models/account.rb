@@ -74,7 +74,7 @@ class Account < ApplicationRecord
   USERNAME_ONLY_RE = /\A#{USERNAME_RE}\z/i
   USERNAME_LENGTH_LIMIT = 30
   DISPLAY_NAME_LENGTH_LIMIT = 30
-  NOTE_LENGTH_LIMIT = 500
+  NOTE_LENGTH_LIMIT = 1024
 
   AUTOMATED_ACTOR_TYPES = %w(Application Service).freeze
 
@@ -372,11 +372,6 @@ class Account < ApplicationRecord
     self[:fields] = fields
   end
 
-<<<<<<< HEAD
-=======
-  DEFAULT_FIELDS_SIZE = 10
-
->>>>>>> ca4842bf6 ([CLACKS] Increase profile fields to 10)
   def build_fields
     return if fields.size >= DEFAULT_FIELDS_SIZE
 
