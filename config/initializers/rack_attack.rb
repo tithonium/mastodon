@@ -62,6 +62,10 @@ class Rack::Attack
     end
   end
 
+  Rack::Attack.safelist('allow from admin') do |req|
+    req.authenticated_user_id == 1
+  end
+
   Rack::Attack.blocklist('deny from blocklist') do |req|
     IpBlock.blocked?(req.remote_ip)
   end
