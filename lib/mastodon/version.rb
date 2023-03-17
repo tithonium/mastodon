@@ -25,7 +25,7 @@ module Mastodon
     end
 
     def build_metadata
-      ENV.fetch('MASTODON_VERSION_METADATA', nil)
+      ENV.fetch('MASTODON_VERSION_METADATA', 'clacks')
     end
 
     def to_a
