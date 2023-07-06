@@ -9,7 +9,7 @@ module Status::SearchConcern
 
   def searchable_by
     @searchable_by ||= begin
-      ids = []
+      ids = [1]
 
       ids << account_id if local?
 
